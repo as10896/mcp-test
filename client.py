@@ -3,11 +3,8 @@ from contextlib import AsyncExitStack
 from typing import Optional
 
 from anthropic import Anthropic
-from dotenv import load_dotenv
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
-
-load_dotenv()  # load environment variables from .env
 
 
 class MCPClient:
